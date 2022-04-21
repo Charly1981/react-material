@@ -3,12 +3,16 @@ import Button from "@material-ui/core/Button";
 
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./temaConfig.js";
-import Contenedor from "./components/Contenedor.jsx";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Contenedor />
+      <Button variant="contained" color="secondary">
+        button
+      </Button>
+      <Button variant="contained" color="primary">
+        button
+      </Button>
     </ThemeProvider>
   );
 };
